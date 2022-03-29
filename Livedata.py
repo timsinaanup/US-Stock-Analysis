@@ -51,8 +51,6 @@ while True:
             # SMA20/SMA200
             SMA20, SMA200 = SMA20s(ClosingValues), SMA200s(ClosingValues)
 
-             # [Under Construction]
-
             buy_condition=[
                 last_close>SMA20,
                 last_close>SMA200,
@@ -79,10 +77,5 @@ while True:
         print("Below Fat4:",sorted_sell,"\n\n\n")
         print("Between SMA20 and SMA200:",neutral_signal,"\n\n\n")
 
-            #2min rule
+           
         sleep(120)
-
-
-
-
-
